@@ -1,0 +1,38 @@
+/*Busca uma coluna em uma tabela especifica.*/
+SELECT Nomedacoluna,coluna1,coluna2
+FROM TABELA
+
+/* O * retorna todas as colunas. */
+SELECT *
+FROM TABELA
+
+/* o distinctf remove valores duplicados */
+SELECT DISTINCT coluna1
+FROM tabela
+
+/*Operadores e condicional WHERE
+operador       discrição
+*               igual
+>               maior que
+<               menor que
+>=              maior ou igual
+<>              Diferente de
+AND             &&
+OR              OU
+*/
+SELECT *
+FROM TABELA
+WHERE NOME1 = 'Pedro' and nome2='Guilherme'
+
+
+/*Conta o numero de produtros cadastrados*/
+Select count (distinct ProductNumber)
+from Production.Product
+
+/*Conta o numero de pesos diferenetes cadastrados*/
+Select count (distinct Weight)
+from Production.Product
+
+/*Seleciona apenas valor x de linhas apos o digitar TOP*/
+SELECT TOP 10*
+FROM tabela
